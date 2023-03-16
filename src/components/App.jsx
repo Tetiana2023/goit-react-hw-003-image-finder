@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Searchbar } from "./Searchbar/Searchbar";
+import {Modal } from './Modal/Modal';
 
 import css from './App.module.css';
 
@@ -14,7 +15,7 @@ render(){
   return (
     <div className={css.app}>
      <Searchbar onSubmit={this.formSubmit}/>
-      
+      <Modal/>
     </div>
   );
 }
