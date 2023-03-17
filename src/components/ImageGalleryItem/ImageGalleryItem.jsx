@@ -16,11 +16,11 @@ export class ImageGalleryItem extends Component {
   render() {
     return (
       <li
-        className={css.imageGalleryItem}
+        className={css.imageGalleryItemimage}
         key={this.props.id}
         onClick={this.toggleModal}
       >
-        <img src={this.props.webformatURL} alt={this.props.tags} />
+        <img lassName={css.imageGalleryItem} src={this.props.webformatURL} alt={this.props.tags} />
         {this.state.showModal && (
           <Modal
             onClose={this.toggleModal}
