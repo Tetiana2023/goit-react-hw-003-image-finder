@@ -20,7 +20,7 @@ export class ImageGalleryItem extends Component {
         key={this.props.id}
         onClick={this.toggleModal}
       >
-        <img lassName={css.imageGalleryItem} src={this.props.webformatURL} alt={this.props.tags} />
+        <img className={css.imageGalleryItem} src={this.props.webformatURL} alt={this.props.tags} />
         {this.state.showModal && (
           <Modal
             onClose={this.toggleModal}
