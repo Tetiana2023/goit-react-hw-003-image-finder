@@ -27,8 +27,6 @@ export class App extends Component {
         this.setState({ isLoading: true });
         const photo = await getImg(inputValue, page);
 
-        // this.totalPhoto = response.totalHits;
-
         this.setState(state => ({
           photo: [...state.photo, ...photo],
           photoOnPage: photo.length,

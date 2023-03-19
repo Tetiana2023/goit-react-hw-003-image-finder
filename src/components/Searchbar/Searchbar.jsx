@@ -1,8 +1,13 @@
 import { Component } from 'react';
 import {FcSearch} from 'react-icons/fc';
 import css from './Searchbar.module.css'
+import PropTypes from 'prop-types';
 
 export class Searchbar extends Component {
+  static propTypes = {
+    onSubmit: PropTypes.func,
+  };
+
   state = {
     inputValue: '',
   };
